@@ -46,6 +46,20 @@
                 <Button Text="Button" />
                 <Label Text="Another Label" />
             </FlexLayout>
+
+            <AbsoluteLayout Margin="40">
+                <BoxView AbsoluteLayout.LayoutBounds="0.5,0,100,100"
+                         AbsoluteLayout.LayoutFlags="PositionProportional"
+                         Rotation="30"
+                         Color="Red" />
+                <BoxView AbsoluteLayout.LayoutBounds="0.5,0,100,100"
+                         AbsoluteLayout.LayoutFlags="PositionProportional"
+                         Rotation="60"
+                         Color="Green" />
+                <BoxView AbsoluteLayout.LayoutBounds="0.5,0,100,100"
+                         AbsoluteLayout.LayoutFlags="PositionProportional"
+                         Color="Blue" />
+            </AbsoluteLayout>
         </VerticalStackLayout>
     </ScrollView>
 
