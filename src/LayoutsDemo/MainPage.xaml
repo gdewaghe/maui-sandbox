@@ -37,6 +37,14 @@
                    Grid.Column="1"
                    Text="Column 1, Row 1" />
         </Grid>
+
+        <FlexLayout AlignItems="Center"
+                    Direction="Column"
+                    JustifyContent="SpaceEvenly">
+            <Label Text="FlexLayout in Action" />
+            <Button Text="Button" />
+            <Label Text="Another Label" />
+        </FlexLayout>
     </VerticalStackLayout>
 
 </ContentPage>
