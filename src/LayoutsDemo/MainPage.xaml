@@ -23,6 +23,20 @@
             <Label Text="Line 2 (below)." />
             <Label Text="Line 3 (below)." />
         </VerticalStackLayout>
+
+        <Grid RowDefinitions="50, 50"
+              ColumnDefinitions="Auto, *"
+              Margin="20">
+            <Label Text="Column 0, Row 0"
+                   WidthRequest="200" />
+            <Label Grid.Column="1"
+                   Text="Column 1, Row 0" />
+            <Label Grid.Row="1"
+                   Text="Column 0, Row 1" />
+            <Label Grid.Row="1"
+                   Grid.Column="1"
+                   Text="Column 1, Row 1" />
+        </Grid>
     </VerticalStackLayout>
 
 </ContentPage>
