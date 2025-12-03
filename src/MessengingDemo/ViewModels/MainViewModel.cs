@@ -7,6 +7,12 @@ namespace MessengingDemo.ViewModels
 {
     public partial class MainViewModel : ObservableObject
     {
+        [ObservableProperty]
+        private int _baseNumber = 1;
+
+        [ObservableProperty]
+        private long _factorial = -1;
+
         [RelayCommand]
         private void ShowDialog()
         {
@@ -17,6 +23,12 @@ namespace MessengingDemo.ViewModels
                 Cancel = "Ok"
             };
             WeakReferenceMessenger.Default.Send(message);
+        }
+
+        [RelayCommand]
+        private void ComputeFactorial()
+        {
+            Factorial = WeakReferenceMessenger.Default.Send(new ComputeFactorialMessage { BaseNumber = this.BaseNumber });
         }
     }
 }
