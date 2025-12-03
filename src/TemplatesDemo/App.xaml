@@ -5,6 +5,22 @@
              xmlns:local="clr-namespace:TemplatesDemo">
     <Application.Resources>
         <ResourceDictionary>
+            <ControlTemplate x:Key="PageWithHeaderAndFooterTemplate">
+                <Grid RowDefinitions="Auto,*,Auto">
+                    <!-- Header -->
+                    <Label BackgroundColor="LightBlue"
+                           Text="This is a common header" />
+
+                    <!-- Primary contener -->
+                    <ContentPresenter Grid.Row="1" />
+
+                    <!-- Footer -->
+                    <Label Grid.Row="2"
+                           BackgroundColor="LightGray"
+                           Text="This is a common footer" />
+                </Grid>
+            </ControlTemplate>
+
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
