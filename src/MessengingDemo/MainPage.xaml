@@ -13,6 +13,21 @@
                              VerticalOptions="Center">
             <Button Command="{Binding ShowDialogCommand}"
                     Text="Show dialog" />
+            <Border Padding="20,20"
+                    StrokeShape="RoundRectangle 8">
+                <VerticalStackLayout Spacing="10">
+                    <Label HorizontalOptions="Start"
+                           Text="Base number" />
+                    <Entry Placeholder="Enter base number..."
+                           Text="{Binding BaseNumber}" />
+                    <Label HorizontalOptions="Start"
+                           Text="Factorial" />
+                    <Label Text="{Binding Factorial}" />
+                    <Button Command="{Binding ComputeFactorialCommand}"
+                            HorizontalOptions="Center"
+                            Text="Compute" />
+                </VerticalStackLayout>
+            </Border>
         </VerticalStackLayout>
     </ScrollView>
 
