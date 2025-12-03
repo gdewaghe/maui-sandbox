@@ -1,8 +1,8 @@
 ﻿namespace IoCDemo
 {
-    public partial class App : Application
+    public partial class App : CustomApp
     {
-        public App()
+        public App(IServiceProvider serviceProvider) : base(serviceProvider)
         {
             InitializeComponent();
         }
