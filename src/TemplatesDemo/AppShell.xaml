@@ -3,10 +3,17 @@
        xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:local="clr-namespace:TemplatesDemo"
+       xmlns:views="clr-namespace:TemplatesDemo.Views"
        Title="TemplatesDemo">
 
     <ShellContent Title="Home"
                   ContentTemplate="{DataTemplate local:MainPage}"
                   Route="MainPage" />
+    <ShellContent Title="Page 2"
+                  ContentTemplate="{DataTemplate views:Page2}"
+                  Route="Page2" />
+    <ShellContent Title="Page 3"
+                  ContentTemplate="{DataTemplate views:Page3}"
+                  Route="Page3" />
 
 </Shell>
