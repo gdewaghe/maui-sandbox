@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessengingDemo", "src\Messe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoCDemo", "src\IoCDemo\IoCDemo.csproj", "{28324147-B5B5-4DCB-8368-5783970A9E45}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplatesDemo", "src\TemplatesDemo\TemplatesDemo.csproj", "{5B531269-E80B-4F3A-AA77-ABCB576543FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +30,10 @@ Global
 		{28324147-B5B5-4DCB-8368-5783970A9E45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28324147-B5B5-4DCB-8368-5783970A9E45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28324147-B5B5-4DCB-8368-5783970A9E45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B531269-E80B-4F3A-AA77-ABCB576543FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B531269-E80B-4F3A-AA77-ABCB576543FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B531269-E80B-4F3A-AA77-ABCB576543FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B531269-E80B-4F3A-AA77-ABCB576543FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
